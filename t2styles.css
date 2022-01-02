@@ -1,0 +1,114 @@
+body {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #181818;
+  color: #8D8D8D;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  background: linear-gradient(45deg, midnightblue, darkslateblue);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: grey;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: darkslateblue;
+  padding: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.start {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(8, 10, 16, 0.7);
+}
+
+.start .chooseHealth {
+  background-color: rgba(36, 36, 36, 0.7);
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.start .chooseHealth .form {
+  align-self: center;
+  display: block;
+  width: 30%;
+  height: auto;
+  text-align: center;
+}
+
+.start .chooseHealth .form input {
+  width: 50%;
+}
+
+.start .chooseHealth .form button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+main {
+  width: 100%;
+  padding: 10px;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+}
+
+header h1 {
+  text-align: center;
+  color: SlateBlue;
+}
+
+header p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+header .flex {
+  display: flex;
+  justify-content: center;
+}
+
+header .flex div {
+  background-color: #242424;
+  padding: 1em;
+  margin: 0 1em;
+}
+
+section {
+  width: 100%;
+  text-align: center;
+  background-color: #121212;
+  padding: 1.5rem;
+}
+
+section p {
+  font-size: 1.3em;
+  color: DarkSlateBlue;
+  font-weight: bold;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="t2styles.css">
+    <title>RPG battle</title>
+</head>
+<body>
+    <header>
+        <h1>Евстафий vs Лютый</h1>
+        <div class="flex">
+        <div>
+            <p>Ваш персонаж: Евстафий</p>
+            <p>Уровень здоровья: <span class="health">0</span></p>
+            <p>Уровень магической брони: <span class="magicArmour">0</span></p>
+            <p>Уровень физической брони: <span class="physicArmour">0</span></p>
+            <p>Магический урон: <span class="magicDamage">0</span></p>
+            <p>Физический урон: <span class="phDamage">0</span></p>
+        </div>
+
+        <div>
+            <p>Ваш враг: <span class="enemy"></span></p>
+            <p>Уровень здоровья врага: <span class="monsterHealth">0</span></p>
+            <p>Уровень магической брони: <span class="monsterMagicArmour">0</span></p>
+            <p>Уровень физической брони: <span class="monsterPhysicArmour">0</span></p>
+            <p>Магический урон: <span class="monsterMagicDamage">0</span></p>
+            <p>Физический урон: <span class="monsterPhDamage">0</span></p>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="start">
+            <div class="chooseHealth">
+                <div class="form">
+                <label for="magicArmour">Выберите уровень магической брони: </label>
+                <input type="number" id="magicArmour" min="0" max="100">
+
+                <label for="physicArmour">Выберите уровень физической брони: </label>
+                <input type="number" id="physicArmour" min="0" max="100">
+
+                <label for="health">Выберите уровень здоровья: </label>
+                <input type="number" id="health" min="0" max="10">
+                <button>Начать игру!</button>
+            </div>
+            </div>
+        </div>
+        <section>
+            <p>Лютый наносит удар: <span class="hit"></span></p>
+            <p>Выберите ответный удар:</p>
+            <div class="chooseHit">
+                <button class="moves_button" value=""></button>
+                <button class="moves_button" value=""></button>
+                <button class="moves_button" value=""></button>
+                <button class="moves_button" value=""></button>
+        </div>
+        </section>
+    </main>
+    <script src="./addList.js" type="module"></script>
+    <script src="./t2script.js" type="module"></script>
+    <script src="./start.js" type="module"></script>
+    <script src="./monsterScript.js" type="module"></script>
+    <!-- <script src="/test.js" type="module"></script> -->
+</body>
+</html>
